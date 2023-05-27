@@ -3,7 +3,7 @@ import requests
 # Create your views here.
 
 def index(request):
-    url = "https://newsapi.org/v2/everything?q=Everything&from=2023-05-22&sortBy=popularity&apiKey=a7bbc567609842aeb10ab6ebe37c27bf"
+    url = "https://newsapi.org/v2/everything?q=Everything&from=2023-05-22&sortBy=popularity&apiKey=yourapi"
     c_news = requests.get(url).json()
     print(c_news)
 
@@ -24,7 +24,7 @@ def index(request):
 
 
 def apple(request):
-    url = "https://newsapi.org/v2/everything?q=Apple&from=2023-05-22&sortBy=popularity&apiKey=a7bbc567609842aeb10ab6ebe37c27bf"
+    url = "https://newsapi.org/v2/everything?q=Apple&from=2023-05-22&sortBy=popularity&apiKey=your api"
     a_news = requests.get(url).json()
     print(a_news)
 
@@ -44,7 +44,7 @@ def apple(request):
     return render(request,'index.html',context)
 
 def sport(request):
-    url = "https://newsapi.org/v2/everything?q=Cricket&from=2023-05-22&sortBy=popularity&apiKey=a7bbc567609842aeb10ab6ebe37c27bf"
+    url = "https://newsapi.org/v2/everything?q=Cricket&from=2023-05-22&sortBy=popularity&apiKey=your api"
     cc_news = requests.get(url).json()
     print(cc_news)
 
@@ -64,7 +64,7 @@ def sport(request):
     return render(request,'Sport.html',context)
 
 def electronics(request):
-    url = "https://newsapi.org/v2/everything?q=Electronics&from=2023-05-22&sortBy=popularity&apiKey=a7bbc567609842aeb10ab6ebe37c27bf"
+    url = "https://newsapi.org/v2/everything?q=Electronics&from=2023-05-22&sortBy=popularity&apiKey=your api"
     el_news = requests.get(url).json()
     print(el_news)
 
@@ -85,7 +85,7 @@ def electronics(request):
 
 
 def bolly(request):
-    url = "https://newsapi.org/v2/everything?q=Bollywood&from=2023-05-22&sortBy=popularity&apiKey=a7bbc567609842aeb10ab6ebe37c27bf"
+    url = "https://newsapi.org/v2/everything?q=Bollywood&from=2023-05-22&sortBy=popularity&apiKey=your api"
     b_news = requests.get(url).json()
     print(b_news)
 
